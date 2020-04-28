@@ -3,14 +3,15 @@
 Below is a record of our project group meetings. This page will be submitted together with the rest of the repository, in partial fulfillment of the CS102 course requirements.
 
 ****
-### Meeting ~ (date, duration)
+### Meeting ~ (22/4/2020, 45 minutes)
 ****
-**Present:** x, y, z...   _**Absent:**_  a, b.
+**Present:** Turgut Alp Edis, Utku Gökçen, Arda Akdeniz, Mikail Koç   _**Absent:**_  none.
 
 **Discussion:** 
-We reviewed progress. Member1 & member2 reported back, explaining that they had discovered rst and demonstrated some useful examples. Member3 had slept and has not yet completed his task, but promised to do so this week! We decided we need to do this, that, and the other, and divided the work between us. Next meeting planned for (date).
+We have discussed about how we can do the app and worked on detailed design report. Then we decided to share the all work between us.
 
-**ToDo:** x & y will do this by ???, z & a will do that by ???, etc.
+**ToDo:** 
+Arda will do create event page. Mikail will do profile and settings page. Utku will do database and login, signup and feed pages. Turgut will do myupcoming events and search pages.
 
 ****
 ### Meeting ~ (date, duration)
