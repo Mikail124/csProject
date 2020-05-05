@@ -1,0 +1,43 @@
+package com.utkugokcen.biact;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class studentprofilepage extends AppCompatActivity {
+    TextView nameText, emailText, depText, namesurname;
+    String name, surname, department, email;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.studentprofilepage);
+
+        nameText = findViewById(R.id.nameText);
+        emailText = findViewById(R.id.emailText);
+        depText = findViewById(R.id.depText);
+        namesurname = findViewById(R.id.namesurname);
+
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
+        surname = intent.getStringExtra("surname");
+        department = intent.getStringExtra("dep");
+        email = intent.getStringExtra("mail");
+
+        nameText.setText("Name: " + name + " " + surname);
+        depText.setText("Department: " + department);
+        emailText.setText("E-mail: " + email );
+        namesurname.setText(name + " " + surname + " " + department);
+    }
+
+    public void backClicked(View view){
+        Intent intent = new Intent(studentprofilepage.this, studentfeedpage.class);
+        intent.putExtra("name", name);
+        intent.putExtra("surname", surname);
+        intent.putExtra("dep", department);
+        intent.putExtra("mail", email);
+        startActivity(intent);
+    }
+}
