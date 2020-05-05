@@ -16,4 +16,6 @@ Today, we did a division of work with my teammates. I will make the login page, 
 Today, I transferred the interfaces of the login page, sign-up page to android studio. It wasn't as easy as I did in Photoshop. Then I made the links between the pages and made the buttons clickable. Finally, I created the database system via Firebase. I used an internet based database system.
 ### ~ 04.05.2020 ~
 Today, I transferred the interface of the feed screens from photoshop to android studio. I also took care of the transfer of information between pages. So after today, I will be able to use the information I get from the user (name, surname, department) anywhere in the application.
+### ~ 05.05.2020 ~
+Today, I transferred the interface of the profile screen from photoshop to android studio. Now, the user can access the profile page and view their information completely after logging into the application. Also, I wrote all the detailed design report by myself.
 ****
