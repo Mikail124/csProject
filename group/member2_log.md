@@ -5,13 +5,13 @@
 
 On this page I will keep a weekly record of what I have done for the CS102 group project. This page will be submitted together with the rest of the repository, in partial fulfillment of the CS102 course requirements.
 
-### ~ date ~
-This week I learn xyz and worked out...
+### ~ 31.03.2020 ~
+This week, I helped the UX design of the project by writing introduction and conclusion parts of it.
 
-### ~ date ~
-This week I helped abc brainstorm ideas for...
+### ~ 22.04.2020 ~
+Today, we did a division of work with my teammates. I will make the create an event page of the mobile application.
 
-### ~ date ~
-blah, blah, blah...
+### ~ 09.05.2020 ~
+Today, I started building the interface where the user creates an event
 
 ****
