@@ -53,6 +53,5 @@ public class createeventpage extends AppCompatActivity
     {
         Intent intent = new Intent(this, createeventpage.class);
         startActivity(intent);
-
     }
 }
