@@ -12,9 +12,9 @@ This week, I helped the UX design of the project by writing introduction and con
 Today, we did a division of work with my teammates. I will make the create an event page of the mobile application.
 
 ### ~ 09.05.2020 ~
-Today, I started building the interface where the user creates an event
+Today, I started building the interface where the user creates an event.
 
 ### ~ 10.05.2020 ~
-Today, I continued building the interface where the user creates an event
+Today, I continued building the interface where the user creates an event.
 
 ****
