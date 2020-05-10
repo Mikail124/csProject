@@ -20,18 +20,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.916" />
 
+    
+
     <EditText
         android:id="@+id/eventDateText"
         android:layout_width="165dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="@+id/eventNameText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/eventNameText"
         android:layout_width="165dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,6 +46,8 @@
         android:id="@+id/eventLocationText"
         android:layout_width="165dp"
         android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +56,8 @@
         android:id="@+id/eventTimeText"
         android:layout_width="165dp"
         android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="380dp"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -56,14 +66,18 @@
         android:id="@+id/descriptionText"
         android:layout_width="165dp"
         android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="460dp"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="@+id/eventDateText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/gePointText"
         android:layout_width="165dp"
         android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="540dp"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
