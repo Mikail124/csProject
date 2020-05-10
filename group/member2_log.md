@@ -14,4 +14,7 @@ Today, we did a division of work with my teammates. I will make the create an ev
 ### ~ 09.05.2020 ~
 Today, I started building the interface where the user creates an event
 
+### ~ 10.05.2020 ~
+Today, I continued building the interface where the user creates an event
+
 ****
