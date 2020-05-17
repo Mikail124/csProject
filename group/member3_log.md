@@ -18,4 +18,6 @@ Today, I transferred the interfaces of the login page, sign-up page to android s
 Today, I transferred the interface of the feed screens from photoshop to android studio. I also took care of the transfer of information between pages. So after today, I will be able to use the information I get from the user (name, surname, department) anywhere in the application.
 ### ~ 05.05.2020 ~
 Today, I transferred the interface of the profile screen from photoshop to android studio. Now, the user can access the profile page and view their information completely after logging into the application. Also, I wrote all the detailed design report by myself.
+### ~ 17.05.2020 ~
+Today, I completed the part that the user can change their profile photos. I created the storage of the application and if the the user change their profile photo, photo will be uploaded to the firebase storage and will be stored it here.
 ****
