@@ -113,14 +113,14 @@
             app:layout_constraintTop_toTopOf="@+id/botLayout" />
 
         <TextView
-            android:id="@+id/namesurname"
+            android:id="@+id/clubname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="56dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="TextView"
             android:textColor="#F9F9F9"
-            android:textSize="30sp"
+            android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -130,6 +130,7 @@
             android:layout_height="60dp"
             android:layout_marginStart="182dp"
             android:layout_marginTop="18dp"
+            android:onClick="addClicked"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/circle"
             app:srcCompat="@drawable/addicon" />
@@ -142,8 +143,17 @@
         android:layout_height="30dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
+        android:onClick="manClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/man" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="411dp"
+        android:layout_height="438dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
