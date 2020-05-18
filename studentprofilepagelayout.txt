@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/layoutana" />
 
     <TextView
-        android:id="@+id/namesurname"
+        android:id="@+id/clubname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -55,7 +55,7 @@
         android:layout_marginTop="232dp"
         android:text="TextView"
         android:textColor="#000001"
-        android:textSize="20dp"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLayout2" />
 
@@ -67,7 +67,7 @@
         android:layout_marginTop="320dp"
         android:text="TextView"
         android:textColor="#000001"
-        android:textSize="20dp"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLayout2" />
 
@@ -77,6 +77,7 @@
         android:layout_height="120dp"
         android:layout_marginStart="144dp"
         android:layout_marginTop="120dp"
+        android:onClick="addphotoClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/topLayout2"
         app:srcCompat="@drawable/addphoto" />
@@ -89,7 +90,7 @@
         android:layout_marginTop="276dp"
         android:text="TextView"
         android:textColor="#000001"
-        android:textSize="20dp"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLayout2" />
 
@@ -100,6 +101,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="400dp"
         android:backgroundTint="#CE3333"
+        android:onClick="createclubClicked"
         android:text="Create a club"
         android:textColor="#FDFDFE"
         app:layout_constraintStart_toStartOf="parent"
