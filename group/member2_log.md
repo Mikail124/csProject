@@ -17,4 +17,7 @@ Today, I started building the interface where the user creates an event.
 ### ~ 10.05.2020 ~
 Today, I continued building the interface where the user creates an event.
 
+### ~ 18.05.2020 ~
+In this day, I created the createeventpage class with the help of Utku and sent him the class so he can upload the whole app code into github.
+
 ****
