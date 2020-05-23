@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 
 public class FeedRecyclerAdapter extends RecyclerView.Adapter<FeedRecyclerAdapter.PostHolder> {
 
+    private ArrayList<String> eventOwnersList;
     private ArrayList<String> eventNamesList;
     private ArrayList<String> eventDatesList;
     private ArrayList<String> eventTimesList;
@@ -27,10 +29,11 @@ public class FeedRecyclerAdapter extends RecyclerView.Adapter<FeedRecyclerAdapte
 
 
 
-    public FeedRecyclerAdapter(ArrayList<String> eventNamesList, ArrayList<String> eventDatesList,
+    public FeedRecyclerAdapter(ArrayList<String> eventOwnersList,ArrayList<String> eventNamesList, ArrayList<String> eventDatesList,
                                ArrayList<String> eventTimesList, ArrayList<String> eventLocationsList,
                                ArrayList<String> eventPointsList, ArrayList<String> eventDescriptionsList,
                                ArrayList<String> eventImagesList) {
+        this.eventOwnersList = eventOwnersList;
         this.eventNamesList = eventNamesList;
         this.eventDatesList = eventDatesList;
         this.eventTimesList = eventTimesList;
@@ -38,7 +41,10 @@ public class FeedRecyclerAdapter extends RecyclerView.Adapter<FeedRecyclerAdapte
         this.eventPointsList = eventPointsList;
         this.eventDescriptionsList = eventDescriptionsList;
         this.eventImagesList = eventImagesList;
+
     }
+
+
 
     @NonNull
     @Override
@@ -52,15 +58,22 @@ public class FeedRecyclerAdapter extends RecyclerView.Adapter<FeedRecyclerAdapte
     @Override
     public void onBindViewHolder(@NonNull PostHolder holder, int position) {
 
-        //holder.clubNameText.setText(clubnameText.getText().toString());
+        holder.clubNameText.setText(eventOwnersList.get(position));
         holder.eventName.setText("Event Name: " +eventNamesList.get(position));
         holder.eventDate.setText("Event Date: " + eventDatesList.get(position));
         holder.eventTime.setText("Event Time: " +eventTimesList.get(position));
         holder.eventLocation.setText("Event Location: " + eventLocationsList.get(position));
         holder.eventPoint.setText("GE250/1 Point: " + eventPointsList.get(position));
         holder.eventDescription.setText("Event Description: " +eventDescriptionsList.get(position));
+        holder.attendButton.setText("ATTEND");
         Picasso.get().load(eventImagesList.get(position)).into(holder.eventImage);
+
     }
+
+    //public void attendToDataBase(@NonNull PostHolder holder, int position){
+
+      //  String eventOwner = holder.clubNameText.getText().toString();
+    //}
 
     @Override
     public int getItemCount() {
@@ -77,6 +90,7 @@ public class FeedRecyclerAdapter extends RecyclerView.Adapter<FeedRecyclerAdapte
         TextView eventLocation;
         TextView eventPoint;
         TextView eventDescription;
+        Button attendButton;
 
         public PostHolder(@NonNull View itemView) {
             super(itemView);
@@ -89,6 +103,7 @@ public class FeedRecyclerAdapter extends RecyclerView.Adapter<FeedRecyclerAdapte
             eventLocation = itemView.findViewById(R.id.r_eventLocation);
             eventPoint = itemView.findViewById(R.id.r_eventPoint);
             eventDescription = itemView.findViewById(R.id.r_eventDescription);
+            attendButton = itemView.findViewById(R.id.attendButton);
 
         }
     }
