@@ -27,7 +27,7 @@ import java.util.Map;
 public class clubfeedpage extends AppCompatActivity {
     TextView clubnameText;
     ImageView manicon;
-    String clubname, name, surname, department, email;
+    String clubname, name, surname, department, email,clubdescription,namesurnameText, password;
     private FirebaseFirestore firebaseFireStore;
     ArrayList<String> eventNameFromFB;
     ArrayList<String> eventDateFromFB;
@@ -36,7 +36,8 @@ public class clubfeedpage extends AppCompatActivity {
     ArrayList<String> eventPointFromFB;
     ArrayList<String> eventDescriptionFromFB;
     ArrayList<String> eventImageFromFB;
-    FeedRecyclerAdapter feedRecyclerAdapter;
+    ArrayList<String> eventOwnerFromFB;
+    FeedRecyclerAdapterForClub feedRecyclerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +53,12 @@ public class clubfeedpage extends AppCompatActivity {
         surname = intent.getStringExtra("surname");
         department = intent.getStringExtra("dep");
         email = intent.getStringExtra("mail");
+        clubdescription = intent.getStringExtra("clubdes");
+        namesurnameText = intent.getStringExtra("namesurname");
+        password = intent.getStringExtra("password");
         clubnameText.setText(clubname);
 
+        eventOwnerFromFB = new ArrayList<>();
         eventNameFromFB = new ArrayList<>();
         eventDateFromFB = new ArrayList<>();
         eventTimeFromFB = new ArrayList<>();
@@ -68,9 +73,9 @@ public class clubfeedpage extends AppCompatActivity {
 
         //RecyclerView
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView_club);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        feedRecyclerAdapter = new FeedRecyclerAdapter(eventNameFromFB ,eventDateFromFB, eventTimeFromFB, eventLocationFromFB,
+        feedRecyclerAdapter = new FeedRecyclerAdapterForClub(eventOwnerFromFB,eventNameFromFB ,eventDateFromFB, eventTimeFromFB, eventLocationFromFB,
                 eventPointFromFB, eventDescriptionFromFB, eventImageFromFB);
         recyclerView.setAdapter(feedRecyclerAdapter);
 
@@ -78,9 +83,10 @@ public class clubfeedpage extends AppCompatActivity {
 
     }
 
+
     public void getDataFromFireStore(){
 
-        CollectionReference collectionReference = firebaseFireStore.collection("Events");
+        CollectionReference collectionReference = firebaseFireStore.collection("clubPageEvents");
 
         collectionReference.orderBy("postdate", Query.Direction.DESCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
@@ -95,7 +101,7 @@ public class clubfeedpage extends AppCompatActivity {
                     for(DocumentSnapshot snapshot : queryDocumentSnapshots.getDocuments()){
 
                         Map<String, Object> data = snapshot.getData();
-
+                        String eventOwner = (String) data.get("eventowner");
                         String eventName = (String) data.get("eventname");
                         String eventDate = (String) data.get("eventdate");
                         String eventTime = (String) data.get("eventtime");
@@ -104,6 +110,7 @@ public class clubfeedpage extends AppCompatActivity {
                         String eventDescription = (String) data.get("eventdescription");
                         String downloadUrl = (String) data.get("downloadurl");
 
+                        eventOwnerFromFB.add(eventOwner);
                         eventNameFromFB.add(eventName);
                         eventDateFromFB.add(eventDate);
                         eventTimeFromFB.add(eventTime);
@@ -131,6 +138,9 @@ public class clubfeedpage extends AppCompatActivity {
         intent.putExtra("dep", department);
         intent.putExtra("mail", email);
         intent.putExtra("clubname", clubname);
+        intent.putExtra("clubdes", clubdescription);
+        intent.putExtra("namesurname", namesurnameText);
+        intent.putExtra("password", password);
         startActivity(intent);
     }
 
@@ -141,6 +151,35 @@ public class clubfeedpage extends AppCompatActivity {
         intent.putExtra("dep", department);
         intent.putExtra("mail", email);
         intent.putExtra("clubname", clubname);
+        intent.putExtra("clubdes", clubdescription);
+        intent.putExtra("namesurname", namesurnameText);
+        intent.putExtra("password", password);
+        startActivity(intent);
+    }
+
+    public void profileClicked(View view){
+        Intent intent = new Intent(clubfeedpage.this, clubprofilepage.class);
+        intent.putExtra("name", name);
+        intent.putExtra("surname", surname);
+        intent.putExtra("dep", department);
+        intent.putExtra("mail", email);
+        intent.putExtra("clubname", clubname);
+        intent.putExtra("clubdes", clubdescription);
+        intent.putExtra("namesurname", namesurnameText);
+        intent.putExtra("password", password);
+        startActivity(intent);
+    }
+
+    public void settingsClicked(View view){
+        Intent intent = new Intent(clubfeedpage.this, settingspage.class);
+        intent.putExtra("name", name);
+        intent.putExtra("surname", surname);
+        intent.putExtra("dep", department);
+        intent.putExtra("mail", email);
+        intent.putExtra("clubname", clubname);
+        intent.putExtra("clubdes", clubdescription);
+        intent.putExtra("namesurname", namesurnameText);
+        intent.putExtra("password", password);
         startActivity(intent);
     }
 }
