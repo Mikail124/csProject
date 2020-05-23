@@ -32,7 +32,7 @@ import java.util.UUID;
 
 public class studentprofilepage extends AppCompatActivity {
     TextView nameText, emailText, depText, namesurname;
-    String name, surname, department, email, clubname;
+    String name, surname, department, email, clubname,clubdescription,namesurnameText, password;
     Bitmap selectedImage;
     ImageView addphoto;
     private FirebaseStorage firebaseStorage;
@@ -58,6 +58,9 @@ public class studentprofilepage extends AppCompatActivity {
         department = intent.getStringExtra("dep");
         email = intent.getStringExtra("mail");
         clubname = intent.getStringExtra("clubname");
+        clubdescription = intent.getStringExtra("clubdes");
+        namesurnameText = intent.getStringExtra("namesurname");
+        password = intent.getStringExtra("password");
 
         nameText.setText("Name: " + name + " " + surname);
         depText.setText("Department: " + department);
@@ -77,6 +80,9 @@ public class studentprofilepage extends AppCompatActivity {
         intent.putExtra("dep", department);
         intent.putExtra("mail", email);
         intent.putExtra("clubname", clubname);
+        intent.putExtra("clubdes", clubdescription);
+        intent.putExtra("namesurname", namesurnameText);
+        intent.putExtra("password", password);
         startActivity(intent);
     }
 
@@ -88,6 +94,9 @@ public class studentprofilepage extends AppCompatActivity {
             intent.putExtra("dep", department);
             intent.putExtra("mail", email);
             intent.putExtra("clubname", clubname);
+            intent.putExtra("clubdes", clubdescription);
+            intent.putExtra("namesurname", namesurnameText);
+            intent.putExtra("password", password);
             startActivity(intent);
         }else{
             Toast.makeText(studentprofilepage.this, "You already have a club.", Toast.LENGTH_LONG).show();
