@@ -23,7 +23,6 @@ _In Bilkent University, there are a few places that we can see the announcements
 #### Group Members
 - [Arda Akdeniz](group/member2_log.md)
 - [Utku Gökçen](group/member3_log.md)
-- [Mikail Koç](group/member4_log.md)
 
 ****
 **Instructor:** _David Davenport_   **TA:**  _Khushbakht Ali Qamar_
