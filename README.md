@@ -1,3 +1,5 @@
+# biAct
+Bilkent CS102 Project - biAct
 # CS102 ~ Design Project ~ Spring 2019/20
 [Computer Engineering Department, Bilkent University](http://w3.cs.bilkent.edu.tr/en/).  
 The information and code in this repository are submitted in partial fulfillment of the CS102 Semester Design Project. Except where explicitly stated, the work is that of the group members listed below (who are expected to follow ethical academic & professional practice).
@@ -13,13 +15,12 @@ _In Bilkent University, there are a few places that we can see the announcements
 + **Group/project Selection:** completed (date)
 + **Requirements:** completed (9/3/2020)
 + **UI Design:** completed (1/4/2020)
-+ **Detailed Design:** in progress
-+ **Implementation:** It's almost done.
++ **Detailed Design:** completed (5/5/2020)
++ **Implementation:** It's almost done
 + **Reflections:** not yet!
 
 [Group Meetings Log](group/meetingslog.md)
 #### Group Members
-- [Turgut Alp Edis](group/member1_log.md)
 - [Arda Akdeniz](group/member2_log.md)
 - [Utku Gökçen](group/member3_log.md)
 - [Mikail Koç](group/member4_log.md)
