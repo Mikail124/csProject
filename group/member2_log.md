@@ -20,4 +20,6 @@ Today, I continued building the interface where the user creates an event.
 ### ~ 18.05.2020 ~
 In this day, I completed the createeventpage class with the help of Utku and sent him the class code so he can upload the whole app code into github.
 
+### ~ 23.05.2020 ~
+In this day, I wrote the revised version of the detailed design report according to the code we wrote and did the UML diagram for the report based on our code.
 ****
