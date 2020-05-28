@@ -18,4 +18,4 @@ Arda will do create event page. Mikail will do profile and settings page. Utku w
 We talked about how to shoot the video of our project.
 
 ****
-NOTE: We did not arrange group meetings because we were 2 people in the project. We talked to Arda through whatsapp.
+NOTE: We did not arrange group meetings because we were 2 people in the project. We talked through whatsapp.
