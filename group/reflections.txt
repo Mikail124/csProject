@@ -1,0 +1,38 @@
+~UTKU GÖKÇEN~
+While starting the project, our aim was to develop a mobile application where 
+all Bilkent University students can follow the activities organized within the 
+university. I think that we nearly created a social media platform where at 
+least the events can be shared, even if there are some mistakes and missing parts 
+of our application. I have met with android studio and firebase for the first 
+time thanks to this project. Thanks to this project, I learned the methods of 
+developing mobile applications to the android platform, as well as working with 
+internet-based database systems. In addition, while doing the UX design part of 
+the project, I learned to work with photoshop and learn what kind of design a social 
+media platform should have as a result of my research.Unfortunately, we started the 
+project as 6 people and completed as 2 people. I was amazed by the fact that 3 people 
+dropped the course, while people could find so much time to research and learn at 
+home nowadays! Arda tried to help me at least, but I did the majority of the part 
+that he had to do. But at least I thank Arda for helping me with writing reports.
+In addition, our group member Mikail Koç has not answered my calls and messages for 
+the past 15 days. Mikail Koç does not contribute to the project 
+in any way! Since we were in this situation, I had to do 95% of the project on my own, 
+including reports, coding and design. So we didn't do anything as a group work and my 
+project group was a completely disappointment for me. Before I started the project, 
+I had doubts on how to complete the project, as I did not know about android studio. 
+But I had a lot of time to investigate. For me, the most difficult part of the project 
+was to use Firebase and Android Studio simultaneously (getting the data, sending it to 
+Firebase, retrieving the data from the database and reflecting it in the application). 
+If I had the chance to start the project again, I would use a different database system. 
+Because I had difficulty working with Firebase and I could not store all the data I wanted.
+I spent 2 hours a day for the project and finished it for about 20 days. I did my best for 
+the project. I am proud to have done the job of a 6-person team alone, although there are 
+many shortcomings.
+
+~ARDA AKDENİZ~
+I found the project useful because I learned how to use Android Studio and Firebase. What 
+I disliked about the project was that we were down to 2 people at the end. I struggled with 
+building Firebase on my project but eventually overcame this and managed to build it. I also 
+found it hard to do the code correctly sometimes but I managed to complete the class. I spent 
+lots of time on this project, it took me a lot of hours and days.. Maybe I could have started 
+earlier to avoid some of the problems. I think it has been a good project and I am proud of 
+what I have achieved.
