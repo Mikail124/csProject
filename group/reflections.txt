@@ -32,7 +32,7 @@ many shortcomings.
 I found the project useful because I learned how to use Android Studio and Firebase. What 
 I disliked about the project was that we were down to 2 people at the end. I struggled with 
 building Firebase on my project but eventually overcame this and managed to build it. I also 
-found it hard to do the code correctly sometimes but I managed to complete the class. I spent 
+found it hard to do the code correctly sometimes but I managed to complete the createeventpage lass. I spent 
 lots of time on this project, it took me a lot of hours and days.. Maybe I could have started 
 earlier to avoid some of the problems. I think it has been a good project and I am proud of 
 what I have achieved.
