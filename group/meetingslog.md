@@ -14,14 +14,8 @@ We have discussed about how we can do the app and worked on detailed design repo
 Arda will do create event page. Mikail will do profile and settings page. Utku will do database and login, signup and feed pages. Turgut will do myupcoming events and search pages.
 
 ****
-### Meeting ~ (date, duration)
-****
-This week I helped abc brainstorm ideas for...
+### Meeting ~ (20.05.2020)
+We talked about how to shoot the video of our project.
 
 ****
-### Meeting ~ (date, duration)
-****
-blah, blah, blah...
-
-****
-****
+NOTE: We did not arrange group meetings because we were 2 people in the project. We talked through whatsapp.

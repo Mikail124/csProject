@@ -16,14 +16,13 @@ _In Bilkent University, there are a few places that we can see the announcements
 + **Requirements:** completed (9/3/2020)
 + **UI Design:** completed (1/4/2020)
 + **Detailed Design:** completed (5/5/2020)
-+ **Implementation:** It's almost done
++ **Implementation:** completed (28.05.2020)
 + **Reflections:** not yet!
 
 [Group Meetings Log](group/meetingslog.md)
 #### Group Members
 - [Arda Akdeniz](group/member2_log.md)
 - [Utku Gökçen](group/member3_log.md)
-- [Mikail Koç](group/member4_log.md)
 
 ****
 **Instructor:** _David Davenport_   **TA:**  _Khushbakht Ali Qamar_

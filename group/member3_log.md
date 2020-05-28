@@ -22,4 +22,7 @@ Today, I transferred the interface of the profile screen from photoshop to andro
 Today, I completed the part that the user can change their profile photos. I created the storage of the application and if the the user change their profile photo, photo will be uploaded to the firebase storage and will be stored it here.
 ### ~ 18.05.2020 ~
 Today, I corrected bugs in transitions between the pages of the application. Also, I helped Arda to create the 'createeventpage' class. After creating the class, I overcome posting the information that I received the from 'createeventpage' class on the feed pages. Although I do almost everything(design, reports, coding) on my own, I approach to the end of the project.
+### ~ 20.05.2020 ~
+I already finished the classes and designs of the project which are under my responsibility but I am still working on 'myupcomingeventspage', 'settings' and 'search' class which are not my under my responsiblity. Also, we created the video presentation. Unfortunately we remained 2 people in the project, I talked for 11 minutes and Arda talked 2 minutes.
+
 ****
